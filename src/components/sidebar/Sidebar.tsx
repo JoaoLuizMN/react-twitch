@@ -5,10 +5,48 @@ import { LuArrowLeftFromLine } from "react-icons/lu";
 import Button from "../Button";
 import { useState } from "react";
 import { classFormatter } from "@/lib/utils";
+import Channel, { ChannelProps } from "./Channel";
 
 export default function Sidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+  const channels: ChannelProps[] = [
+    {
+      image: "/images/csharp.png",
+      name: "João",
+      category: "Programming",
+      viewers: 1000,
+      isLive: true,
+    },
+    {
+      image: "/images/csharp.png",
+      name: "João",
+      category: "Programming",
+      viewers: 1000,
+      isLive: true,
+    },
+    {
+      image: "/images/csharp.png",
+      name: "João",
+      category: "Programming",
+      viewers: 1000,
+      isLive: true,
+    },
+    {
+      image: "/images/csharp.png",
+      name: "João",
+      category: "Programming",
+      viewers: 1000,
+      isLive: true,
+    },
+    {
+      image: "/images/csharp.png",
+      name: "João",
+      category: "Programming",
+      viewers: 1000,
+      isLive: true,
+    },
+  ];
   return (
     <div
       className={classFormatter(
@@ -26,12 +64,22 @@ export default function Sidebar() {
 
         <Button
           variant="ghost"
-          className={classFormatter({"rotate-180" : !isSidebarOpen})}
+          className={classFormatter({ "rotate-180": !isSidebarOpen })}
           onClick={() => setIsSidebarOpen((isSidebarOpen) => !isSidebarOpen)}
         >
           <LuArrowLeftFromLine size={ICON_SIZES.small} />
         </Button>
       </div>
+
+      {channels.map((channel) => (
+        <Channel
+          image={channel.image}
+          name={channel.name}
+          category={channel.category}
+          viewers={channel.viewers}
+          isLive={channel.isLive}
+        />
+      ))}
     </div>
   );
 }
