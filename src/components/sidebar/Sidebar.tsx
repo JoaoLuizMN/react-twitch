@@ -15,36 +15,43 @@ export default function Sidebar() {
       image: "/images/csharp.png",
       name: "João",
       category: "Programming",
-      viewers: 1000,
+      viewers: 3500,
       isLive: true,
     },
     {
       image: "/images/csharp.png",
-      name: "João",
-      category: "Programming",
-      viewers: 1000,
+      name: "Pedro",
+      category: "Dark Souls",
+      viewers: 6700,
       isLive: true,
     },
     {
       image: "/images/csharp.png",
-      name: "João",
-      category: "Programming",
-      viewers: 1000,
+      name: "Alfonço",
+      category: "Kirby",
+      viewers: 101000,
       isLive: true,
     },
     {
       image: "/images/csharp.png",
-      name: "João",
-      category: "Programming",
-      viewers: 1000,
+      name: "Mercedes",
+      category: "Dragons Dogma",
+      viewers: 6000,
       isLive: true,
     },
     {
       image: "/images/csharp.png",
-      name: "João",
-      category: "Programming",
-      viewers: 1000,
+      name: "Matheus",
+      category: "IRL",
+      viewers: 600,
       isLive: true,
+    },
+    {
+      image: "/images/csharp.png",
+      name: "Emannuuuuuuueul",
+      category: "IRL",
+      viewers: 600,
+      isLive: false,
     },
   ];
   return (
@@ -72,7 +79,7 @@ export default function Sidebar() {
       </div>
 
       {channels.map((channel) => (
-        <Channel
+        <Channel key={`Channel - ${channel.name}`}
           image={channel.image}
           name={channel.name}
           category={channel.category}

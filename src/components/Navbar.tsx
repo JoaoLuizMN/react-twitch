@@ -17,7 +17,7 @@ export default function Navbar() {
         <button>
           <FaTwitch size={ICON_SIZES.medium} className="text-purple-600" />
         </button>
-        <button className="hover:text-purple-600">Search</button>
+        <button className="hover:text-purple-600">Browse</button>
         <button className="hover:text-purple-600" title="More">
           <BsThreeDotsVertical size={ICON_SIZES.small} />
         </button>
@@ -38,7 +38,7 @@ export default function Navbar() {
         <Button variant="ghost">
           <TbCrown size={ICON_SIZES.small} />
         </Button>
-        <Button variant="default">Sign in</Button>
+        <Button variant="default">Log in</Button>
         <Button variant="action">Sign up</Button>
         <Button variant="ghost">
           <MdPersonOutline size={ICON_SIZES.medium} />
