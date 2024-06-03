@@ -7,7 +7,8 @@ export type ChannelProps = {
   category: string;
   viewers: number;
   isLive: boolean;
-  description: string
+  description: string;
+  title: string;
 };
 
 export default function Channel({
@@ -29,8 +30,7 @@ export default function Channel({
       </div>
 
       <div className={`flex flex-col ${!isLive ? "justify-center" : ""}`}>
-        
-        <p className={classFormatter({"text-black/20" : !isLive})}>{name}</p>
+        <p className={classFormatter({ "text-black/20": !isLive })}>{name}</p>
 
         {isLive && <p className="text-sm text-neutral-500">{category}</p>}
       </div>

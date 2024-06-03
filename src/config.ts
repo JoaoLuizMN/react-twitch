@@ -17,6 +17,7 @@ export const channels: ChannelProps[] = [
     isLive: true,
     description:
       "Salve galera sejam todos bem-vindos ao meu canal",
+      title: "Tudojunto"
   },
   {
     image: "/images/Angular.png",
@@ -25,6 +26,7 @@ export const channels: ChannelProps[] = [
     viewers: 6700,
     isLive: true,
     description: "10k delikes",
+    title: "Tudojunto"
   },
   {
     image: "/images/Crow.jpg",
@@ -33,6 +35,7 @@ export const channels: ChannelProps[] = [
     viewers: 101000,
     isLive: true,
     description: "10k delikes",
+    title: "Tudojunto"
   },
   {
     image: "/images/django-logo.png",
@@ -41,14 +44,16 @@ export const channels: ChannelProps[] = [
     viewers: 6000,
     isLive: true,
     description: "10k delikes",
+    title: "Tudojunto"
   },
   {
     image: "/images/React.png",
     name: "Matheus",
     category: "IRL",
-    viewers: 600,
+    viewers: 7500,
     isLive: true,
     description: "10k delikes",
+    title: "Tudojunto"
   },
   {
     image: "/images/csharp.png",
@@ -57,5 +62,6 @@ export const channels: ChannelProps[] = [
     viewers: 600,
     isLive: false,
     description: "10k delikes",
+    title: "Tudojunto"
   },
 ];

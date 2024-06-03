@@ -12,7 +12,7 @@ import Button from "./Button";
 
 export default function Navbar() {
   return (
-    <div className="flex relative justify-between items-center text-sm font-semibold shadow h-12 px-2">
+    <div className="flex relative justify-between items-center text-sm font-semibold shadow h-12 p-2">
       <div className="flex gap-x-4">
         <button>
           <FaTwitch size={ICON_SIZES.medium} className="text-purple-600" />
