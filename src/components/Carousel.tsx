@@ -12,19 +12,11 @@ const [currentImage, setCurrentImage] = useState(0);
 const images = ["/images/csharp.png", "/images/Angular.png", "/images/django-logo.png", "/images/React.png", "/images/Crow.jpg"]
 
 const nextImage = () =>{
-  if(currentImage + 1 >= images.length){
-    setCurrentImage(0)
-    return;
-  }
-  setCurrentImage((currentImage) => currentImage + 1);
+  setCurrentImage((currentImage) => currentImage >= images.length - 1 ? currentImage = 0 : currentImage + 1);
 }
 
 const previousImage = () => {
-  if(currentImage < 0){
-    setCurrentImage(images.length - 1)
-    return;
-  }
-  setCurrentImage((currentImage) => currentImage - 1);
+  setCurrentImage((currentImage) => currentImage < 0 ? currentImage = images.length - 1 : currentImage - 1);
 }
   return (
     <div className="flex">
