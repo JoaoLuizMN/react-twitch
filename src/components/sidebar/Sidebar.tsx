@@ -5,55 +5,12 @@ import { LuArrowLeftFromLine } from "react-icons/lu";
 import Button from "../Button";
 import { useState } from "react";
 import { classFormatter } from "@/lib/utils";
-import Channel, { ChannelProps } from "./Channel";
+import Channel from "./Channel";
+import { channels } from "@/config";
 
 export default function Sidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const channels: ChannelProps[] = [
-    {
-      image: "/images/csharp.png",
-      name: "João",
-      category: "Programming",
-      viewers: 3500,
-      isLive: true,
-    },
-    {
-      image: "/images/csharp.png",
-      name: "Pedro",
-      category: "Dark Souls",
-      viewers: 6700,
-      isLive: true,
-    },
-    {
-      image: "/images/csharp.png",
-      name: "Alfonço",
-      category: "Kirby",
-      viewers: 101000,
-      isLive: true,
-    },
-    {
-      image: "/images/csharp.png",
-      name: "Mercedes",
-      category: "Dragons Dogma",
-      viewers: 6000,
-      isLive: true,
-    },
-    {
-      image: "/images/csharp.png",
-      name: "Matheus",
-      category: "IRL",
-      viewers: 600,
-      isLive: true,
-    },
-    {
-      image: "/images/csharp.png",
-      name: "Emannuuuuuuueul",
-      category: "IRL",
-      viewers: 600,
-      isLive: false,
-    },
-  ];
   return (
     <div
       className={classFormatter(
@@ -79,12 +36,14 @@ export default function Sidebar() {
       </div>
 
       {channels.map((channel) => (
-        <Channel key={`Channel - ${channel.name}`}
+        <Channel
+          key={`Channel - ${channel.name}`}
           image={channel.image}
           name={channel.name}
           category={channel.category}
           viewers={channel.viewers}
           isLive={channel.isLive}
+          description={channel.description}
         />
       ))}
     </div>

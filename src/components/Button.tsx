@@ -3,10 +3,8 @@
 import { classFormatter } from "@/lib/utils";
 
 type ButtonProps = {
-  variant: "ghost" | "default" | "action";
+  variant: "ghost" | "default" | "action" | "ghost-white";
 } & React.HTMLAttributes<HTMLButtonElement>;
-
-
 
 export default function Button({
   variant,
@@ -19,6 +17,7 @@ export default function Button({
       className={classFormatter(
         "rounded",
         {
+          "hover:bg-white/10 p-1 ": variant === "ghost-white",
           "hover:bg-black/10 p-1 ": variant === "ghost",
           "px-2 py-1.5": variant === "default" || variant === "action",
           "hover:bg-black/10 bg-neutral-100": variant === "default",
