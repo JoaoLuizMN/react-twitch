@@ -44,6 +44,7 @@ export default function Sidebar() {
           viewers={channel.viewers}
           isLive={channel.isLive}
           description={channel.description}
+          title={channel.title}
         />
       ))}
     </div>

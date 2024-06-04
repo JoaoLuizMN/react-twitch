@@ -15,9 +15,8 @@ export const channels: ChannelProps[] = [
     category: "Programming",
     viewers: 3500,
     isLive: true,
-    description:
-      "Salve galera sejam todos bem-vindos ao meu canal",
-      title: "Tudojunto"
+    description: "Salve galera sejam todos bem-vindos ao meu canal",
+    title: "Tudojunto",
   },
   {
     image: "/images/Angular.png",
@@ -26,7 +25,7 @@ export const channels: ChannelProps[] = [
     viewers: 6700,
     isLive: true,
     description: "10k delikes",
-    title: "Tudojunto"
+    title: "Tudojunto",
   },
   {
     image: "/images/Crow.jpg",
@@ -35,7 +34,7 @@ export const channels: ChannelProps[] = [
     viewers: 101000,
     isLive: true,
     description: "10k delikes",
-    title: "Tudojunto"
+    title: "Tudojunto",
   },
   {
     image: "/images/django-logo.png",
@@ -44,7 +43,7 @@ export const channels: ChannelProps[] = [
     viewers: 6000,
     isLive: true,
     description: "10k delikes",
-    title: "Tudojunto"
+    title: "Tudojunto",
   },
   {
     image: "/images/React.png",
@@ -53,15 +52,24 @@ export const channels: ChannelProps[] = [
     viewers: 7500,
     isLive: true,
     description: "10k delikes",
-    title: "Tudojunto"
+    title: "Tudojunto",
   },
   {
-    image: "/images/csharp.png",
+    image: "/images/Haskell-Logo.png",
+    name: "Fasmatal",
+    category: "EuroTruck",
+    viewers: 700,
+    isLive: true,
+    description: "Live Até o gaz acabar",
+    title: "Rodovia sem buraco?",
+  },
+  {
+    image: "/images/r.jpg",
     name: "Emannuuuuuuueul",
     category: "IRL",
     viewers: 600,
     isLive: false,
     description: "10k delikes",
-    title: "Tudojunto"
+    title: "Tudojunto",
   },
 ];

@@ -6,7 +6,12 @@ export default function LivePreview({ channel }: { channel: ChannelProps }) {
   return (
     <div className="bg-purple-500 ">
       <div className="relative w-full aspect-video">
-        <Image src={channel.image} alt="channel image" fill />
+        <Image
+          src={channel.image}
+          alt="channel image"
+          fill
+          className="bg-white hover:translate-x-2 hover:-translate-y-2 transition-all duration-200"
+        />
         <p className="text-sm text-white bg-black/50 px-1 rounded-sm absolute bottom-2 left-2">
           {channel.viewers >= 1000
             ? channel.viewers / 1000 + "k"
